@@ -1,0 +1,53 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+ * {
+ 	/*Reset*/
+	margin: 0;
+	padding: 0;
+}
+
+body{
+
+}
+
+figure img {
+	height: auto;
+	width: 100%;
+}
+
+header{
+	margin-left: auto;
+	margin-right: auto;
+}
+	header figure{
+		margin-left: auto;
+	margin-right: auto;
+		width: 35%;
+	}
+
+nav{
+	text-align: center;
+}
+	nav ul li {
+		display: inline-block;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
