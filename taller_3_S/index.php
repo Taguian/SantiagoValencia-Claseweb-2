@@ -33,13 +33,13 @@
             <img id="Restaurante" src="img/Restaurante.png">
         </section>
     </div>
-    <div>
-        <div id="map_canvas" style="height:300px"></div>
-    </div>
-    <div id="map" style="width: 1000px; height: 100px;"></div>
     <section id="dropbox">
-        <canvas id="displayP" height="200px"></canvas>
+        <canvas id="displayP" height="240"></canvas>
     </section>
+    <div>
+        <div id="map_canvas" style="height:658px"></div>
+    </div>
+    <div id="map" style="width: 1000px; height: 1000px;"></div>
     <?php 
     /* Prueba de mapa con puntos asignados manualmente
     <div class="mapa">
