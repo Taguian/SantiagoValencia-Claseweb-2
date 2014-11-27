@@ -28,8 +28,8 @@
     <div class="row">
         <h3 id="texto">Drop here the places you wanna fucking see</h3>
         <section id="imagebox">
-            <img id="BusStop" src="img/BusStop.png">
-            <img id="InterestPoint" src="img/InterestPoint.png">
+            <img id="Parada" src="img/Parada.png">
+            <img id="Interes" src="img/Interes.png">
             <img id="Restaurante" src="img/Restaurante.png">
         </section>
     </div>

@@ -51,7 +51,7 @@ function iniciar(){
 	displayP=soltar.getContext('2d');
 	soltar.addEventListener('dragenter', entrando,false);
 	soltar.addEventListener('dragleave', saliendo, false);
-	soltar.addEventListener('dragover', function(e){e.preventDefault();},false);
+	soltar.addEventListener('dragover',function(e){e.preventDefault();},false);
 	soltar.addEventListener('drop',soltado,false);
 }
 /*Definicion de funciones*/
@@ -77,7 +77,7 @@ function arrastrado(e){
    	elemento=e.target;
    	e.dataTransfer.setData('Text',elemento.getAttribute('id'));
    	e.dataTransfer.setDragImage(e.target,62,62);
-}
+   }
 
 /*Transferencia de Ajax lo cual y en toda sinceridad entendi muy bien
 hasta el momento en que sali del salon y se me borro absolutamente todo
@@ -89,6 +89,7 @@ Ambos sacaron esto del libro
 es cuando obtengo los datos y procedo a hacer la ejecucion php para llenar los arreglos iniciales y mostrar las cosas
 */
 function soltado(e){
+	/*
 	e.preventDefault();
 	var id=dataTransfer.getData('Text');//obtiene el data de lo que se dropeo
 	var elemento=document.getElementById(id);
@@ -96,11 +97,18 @@ function soltado(e){
 	var pX = e.pageX - soltar.offsetLeft;
 	var pY = e.pageY - soltar.offsetTop;
 	displayP.drawImage(elemento,pX-100,pY-100);
-
+*/
+	e.preventDefault();
+		var id=e.dataTransfer.getData('Text');
+		var elemento=document.getElementById(id);
+		console.log(id);
+		var posX=e.pageX-soltar.offsetLeft;
+		var posY=e.pageY-soltar.offsetTop;
+		displayP.drawImage(elemento,posX-100,posY-100);
 	/*Se envia la informacion a un archivo php donde se hacen las evaluaciones pertinentes para traer los puntos necesarios*/
 	$.ajax({
 		type: "POST",
-		url:"data.php",
+		url:"/cargar.php",
 		data: {marca: id}
 	}).done(function(){
 		console.log("Solicitud Enviada");
