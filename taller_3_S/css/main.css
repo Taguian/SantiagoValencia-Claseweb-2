@@ -1,0 +1,47 @@
+ * {
+    /*Reset*/
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #C6C6C6;
+}
+figure img {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 9%;
+}
+#dropbox{
+    border: 2px solid #999999;
+    width: 70%;
+}
+#imagebox{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DADADA;
+    width: 50%;
+}
+#map_canvas{
+    margin-left: -1.7%;
+    width: 102%;
+}
+#displayP{
+    width: 100%;
+}
+.imagenfiltro{
+    width: 31%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mapa{
+    margin-left: auto;
+    margin-right: auto;
+}
