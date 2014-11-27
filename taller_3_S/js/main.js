@@ -98,7 +98,7 @@ function soltado(e){
     console.log(id);
     var posX=e.pageX-soltar.offsetLeft;
     var posY=e.pageY-soltar.offsetTop;
-    displayP.drawImage(elemento,posX-100,posY-100);
+    //displayP.drawImage(elemento,posX-100,posY-100);
   /*Se envia la informacion a un archivo php donde se hacen las evaluaciones pertinentes para traer los puntos necesarios*/
   $.ajax({
     type: "POST",
